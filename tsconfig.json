@@ -22,5 +22,15 @@
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
-  }
+  },
+  "exclude": [
+    "node_modules/*",
+    "**/*-aot.ts"
+  ],
+  "include": [
+    "/src/main.ts",
+    "src/polyfills.ts",
+    "./node_modules/ng-study/src/**/*.ts",
+    "./node_modules/ng-study/src/polyfills.ts",
+  ]
 }
