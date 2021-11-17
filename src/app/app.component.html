@@ -11,10 +11,4 @@
   <a routerLink="aa/feature3">feature3</a>
 </div>
 
-<div *ngFor="let hero of heroes; let i = index; let odd = odd">
-  ({{ i }}) {{ hero.name }}
-</div>
-解析后：
-<ng-template ngFor let-hero [ngForOf]="heroes" let-i="index" let-odd="odd">
-  <div>({{ i }}) {{ hero.name }}</div>
-</ng-template>
+
